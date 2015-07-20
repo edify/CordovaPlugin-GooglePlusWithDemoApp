@@ -114,6 +114,8 @@
     [personDict setValue:person.displayName forKey:@"name"];
     [personDict setValue:[GPPSignIn sharedInstance].userEmail forKey:@"emails"];
     [personDict setValue:person.gender forKey:@"gender"];
+    [personDict setValue:person.image forKey:@"image"];
+    [personDict setValue:person.identifier forKey:@"identifier"];
     
     return personDict;
 
