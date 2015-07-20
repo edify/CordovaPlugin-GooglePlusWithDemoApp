@@ -257,6 +257,8 @@ public class ConnectGoogle extends CordovaPlugin implements GoogleApiClient.Conn
 	            userProfile.put("Name", currentPerson.getDisplayName());
 	            String personName = currentPerson.getDisplayName();
 	            userProfile.put("Gender",  getGender(currentPerson.getGender()));
+	            userProfile.put("Image",currentPerson.getImage().getUrl());
+	            userProfile.put("Id",currentPerson.getId());
 	            
 	           // userProfile.put("ProfileUrl", currentPerson.getUrl());
 	            /*String personPhotoUrl = currentPerson.getImage().getUrl();
