@@ -188,7 +188,7 @@ public class ConnectGoogle extends CordovaPlugin implements GoogleApiClient.Conn
 					mConnectionProgressDialog.dismiss();
 		mConnectionResult = null;
 		// TODO Auto-generated method stub
-		Toast.makeText(cordova.getActivity(), "User is connected!", Toast.LENGTH_LONG).show();
+		//Toast.makeText(cordova.getActivity(), "User is connected!", Toast.LENGTH_LONG).show();
 		//mConnectionProgressDialog.dismiss();
 	    // Get user's information
 	    JSONObject userProfile= getProfileInformation();
@@ -285,8 +285,8 @@ public class ConnectGoogle extends CordovaPlugin implements GoogleApiClient.Conn
 	            new LoadProfileImage(imgProfilePic).execute(personPhotoUrl);*/
 	            return userProfile;
 	        } else {
-	            Toast.makeText(cordova.getActivity(),
-	                    "Person information is not available", Toast.LENGTH_LONG).show();
+	            // Toast.makeText(cordova.getActivity(),
+	            //         "Person information is not available", Toast.LENGTH_LONG).show();
 	            return null;
 	        }
 	    } catch (Exception e) {
